@@ -60,6 +60,16 @@ body {
   background-color: #FFFAFA;
   color: #444;
 }
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 3px;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -84,4 +94,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section {
+  padding: 4% 0;
+}
+#products h2 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+#products .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#products .container div {
+  width: 20%;
+  text-align: center;
+  padding: 4% 0;
+  border: 3px solid #444;
+  background-color: #fff;
 }
