@@ -126,10 +126,8 @@ header {
   align-items: center;
 }
 section {
-  padding: 4% 0;
-}
-section {
   display: block;
+  padding: 4% 2%;
 }
 #products h2 {
   text-align: center;
@@ -292,4 +290,95 @@ footer h3 {
 }
 .copy a {
   color: #fff
+}
+
+/* Media Queries Starts Here */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: rgb(51, 104, 20);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'PT Sans', sans-serif;
+    color:black;
+  }
+  header {
+      margin-top: 5.5%;
+      height: 45vh;
+      background-image: url(../images/header.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: .5px;
+  }
+  a {
+    color: black;
+  }
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  #about .text {
+    height: 50%;
+    width: 60%;
+    padding: 3%;
+    border: 3px solid #444;
+    background-color: #fff;
+}
+#about .text p {
+  height: 50%;
+  text-align: justify;
+}
+.gallery .container div {
+  width: 40%;
+  height: 30vh;
+  margin: 2% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.gallery .container .farm {
+  background-image: url(../images/barn.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.gallery .container .cook {
+  background-image: url(../images/cook.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.gallery .container .produce {
+  background-image: url(../images/produce.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.gallery .container .animals {
+  background-image: url(../images/sheep.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+footer div nav a {
+  margin: 2% 0;
+  color :black;
+}
+footer h3 {
+  text-align: center;
+  margin-bottom: 4%;
+  color: black;
+}
+ .copy p {
+   color: black;
+ }
+ .copy a {
+   color: black;
+ }
 }
