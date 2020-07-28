@@ -19,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+ HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -41,17 +41,19 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 /*CSS starts here*/
-html {
-  font-size: 62.5%;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html {
+  display: block;
 }
 body {
   font-size: 1.8rem;
@@ -59,6 +61,9 @@ body {
   font-family: 'PT Sans', sans-serif;
   background-color: #FFFAFA;
   color: #444;
+}
+div {
+  display: block;
 }
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
@@ -70,6 +75,28 @@ h1 {
 h2 {
   font-size: 3rem;
 }
+h3 {
+  font-size: 2.5rem;
+}
+a {
+  color: #444;
+  text-decoration: none;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+ -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased; 
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fal, .far {
+  font-family: "Font Awesome 5 Pro";
+}
+.far {
+  font-weight: 400;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,12 +106,15 @@ nav {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   top: 0;
+}  
+ nav .logo {
+  width: 10%;
 }
 nav .links {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
-}
+} 
 header {
   margin-top: 5.5%;
   height: 90vh;
@@ -97,6 +127,9 @@ header {
 }
 section {
   padding: 4% 0;
+}
+section {
+  display: block;
 }
 #products h2 {
   text-align: center;
@@ -112,4 +145,151 @@ section {
   padding: 4% 0;
   border: 3px solid #444;
   background-color: #fff;
+}
+element.style {
+}
+#products .container div i {
+    margin: 4% 0;
+}
+i {
+    font-size: 5.5rem;
+}
+#products .container div i {
+  margin: 4% 0;
+}
+.hero {
+  background-image: url(../images/dirt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 40vh;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#about .text {
+  width: 60%;
+  padding: 3%;
+  border: 3px solid #444;
+  background-color: #fff;
+}
+.far {
+  font-weight: 400;
+}
+#about .text p {
+  text-align: justify;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery .container div {
+  width: 40%;
+  height: 40vh;
+  margin: 2% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.gallery .container div .hide {
+  background-color: #fff;
+  height: 10vh;
+  display: none;
+}
+.gallery .container div .hide h2 {
+  margin: 4%;
+}
+.gallery .container .farm {
+  background-image: url(../images/barn.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .container .cook {
+  background-image: url(../images/cook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .container .produce {
+  background-image: url(../images/produce.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .container .animals {
+  background-image: url(../images/sheep.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contact h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-around;
+}
+#contact .container .left, #contact .container .right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+#contact .container img {
+  width: 75%;
+}
+footer {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fcb131;
+  color: #fff;
+}
+footer div {
+  width: 33%;
+}
+footer div nav{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fcb131;
+}
+footer div nav a {
+  margin: 2% 0;
+  color: #fff;
+}
+footer h3 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fcb131;
+}
+.social a {
+  color: #fff;
+}
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.copy p {
+  margin: 0 5%;
+}
+.copy a {
+  color: #fff
 }
